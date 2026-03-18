@@ -11,13 +11,13 @@ public class StackUsingLL {
         }
     }
 
-    static class Stack{
-        public static Node head;
+    public static class Stack{
+        public Node head;
 
-        public static boolean isEmpty(){
+        public boolean isEmpty(){
             return head==null;
         }
-        public static void push(int x){
+        public void push(int x){
             Node newNode = new Node(x);
             if(isEmpty()){
                 head = newNode;
@@ -27,7 +27,7 @@ public class StackUsingLL {
             head = newNode;
         }
 
-        public static int pop(){
+        public int pop(){
             if(isEmpty()){
                 return -1;
             }
@@ -36,7 +36,7 @@ public class StackUsingLL {
             return top;
         } 
 
-        public static int peek(){
+        public int peek(){
             if(isEmpty()){
                 return -1;
             }
