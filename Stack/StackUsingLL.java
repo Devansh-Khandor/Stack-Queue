@@ -43,7 +43,7 @@ public class StackUsingLL {
             return head.data;
         }
     }
-
+    
     public static void main(String args[]){
         Stack s = new Stack();
         s.push(1);
